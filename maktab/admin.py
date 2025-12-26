@@ -1,3 +1,6 @@
 from django.contrib import admin
+from universitet.models import Maktab, Director
 
-# Register your models here.
+
+admin.site.register(Maktab)
+admin.site.register(Director)
