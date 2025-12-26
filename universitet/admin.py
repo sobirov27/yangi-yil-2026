@@ -1,3 +1,5 @@
 from django.contrib import admin
+from universitet.models import Direktor, Universitet
 
-# Register your models here.
+admin.site.register(Direktor)
+admin.site.register(Universitet)
