@@ -21,7 +21,4 @@ class Director(models.Model):
     time_to_work = models.DateField()
     created_at = models.DateField()
 
-
-    def __str__(self):
-        return self.user
     

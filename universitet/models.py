@@ -18,6 +18,3 @@ class Direktor(models.Model):
     oytik = models.PositiveIntegerField()
     ishga_kelgan_vaqt = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name
