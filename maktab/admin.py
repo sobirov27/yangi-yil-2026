@@ -1,5 +1,5 @@
 from django.contrib import admin
-from universitet.models import Maktab, Director
+from maktab.models import Maktab, Director
 
 
 admin.site.register(Maktab)
