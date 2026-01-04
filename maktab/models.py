@@ -17,10 +17,24 @@ class Maktab(models.Model):
 
 class Director(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    solary = models.DecimalField(max_digits=10,decimal_places=2)
+    salary = models.DecimalField(max_digits=10,decimal_places=2)
     time_to_work = models.DateField()
     created_at = models.DateField()
 
+
+    def __str__(self):
+        return self.user
+    
+
+class Oqituvchi(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    age = models.IntegerField(default=100)
+    monthly_salary = models.IntegerField()
+    about_teacher = models.TextField(max_length=200)
+    time_to_work = models.DateField()
+    number_st = models.IntegerField()
+    created_at = models.DateField()
+    changed_time = models.DateField()
 
     def __str__(self):
         return self.user
