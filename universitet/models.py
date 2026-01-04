@@ -19,5 +19,13 @@ class Direktor(models.Model):
     ishga_kelgan_vaqt = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.name
+
+class Oqituvchi(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    age = models.IntegerField(default=18)
+    solary = models.PositiveIntegerField()
+    about = models.TextField(max_length=500)
+    joined = models.DateTimeField(auto_now_add=True)
+    number_of_pupils = models.IntegerField(default=10)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
