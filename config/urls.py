@@ -22,3 +22,4 @@ urlpatterns = [
     path('maktab/', include('maktab.urls')),
     path('universitet/', include('universitet.urls')),
 ]
+
